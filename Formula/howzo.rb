@@ -8,7 +8,10 @@ class Howzo < Formula
   depends_on "python@3.14"
 
   def install
-    system Formula["python@3.14"].bin/"python3", "-m", "pip", "install", "."
+    venv = libexec/"venv"
+    system Formula["python@3.14"].bin/"python3", "-m", "venv", venv
+    system venv/"bin/pip", "install", "."
+    bin.install_symlink venv/"bin/howzo"
   end
 
   def test
