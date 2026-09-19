@@ -5,10 +5,10 @@ class Howzo < Formula
   version "0.1.0"
   license "MIT"
 
-  depends_on :python
+  depends_on "python@3.14"
 
   install do
-    system language(:python), "-m", "pip", "install", "."
+    system Formula["python@3.14"].bin/"python3", "-m", "pip", "install", "."
   end
 
   test do
