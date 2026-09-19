@@ -7,11 +7,11 @@ class Howzo < Formula
 
   depends_on "python@3.14"
 
-  install do
+  def install
     system Formula["python@3.14"].bin/"python3", "-m", "pip", "install", "."
   end
 
-  test do
+  def test
     system bin/"howzo", "db"
   end
 end
