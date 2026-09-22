@@ -1,8 +1,8 @@
 class Howzo < Formula
   desc "Local, zero-model command router: ask in English, get the installed tool"
   homepage "https://github.com/sohailchd/howzo"
-  url "https://github.com/sohailchd/howzo/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "7a1e41ff5d5e9df89b5e164b2721f82d1409cd2fb1edd054d469a9dca9eb51f0"
+  url "https://github.com/sohailchd/howzo/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "6eaf1de2f33bb2cd9e53cd101e670c4ae0f7b472276d477fdb35b83f03e64cd5"
   license "MIT"
 
   depends_on "python@3.14"
